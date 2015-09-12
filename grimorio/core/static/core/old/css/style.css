@@ -1,0 +1,225 @@
+body {
+  font-family: arial;
+  background-color: #851e1b;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin: 5px
+
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Layout */
+
+div#tudo {
+  position: absolute;
+  background-color: white;
+  margin: 20px 0 20px -390px;
+  width: 760px;
+  left: 50%;
+  border: 3px solid #310d0b;
+}
+#topo {
+  font-size: 3em;
+  margin: 20px;
+}
+
+#rodape {
+  margin: 0px 0 20px -1px;
+  margin-bottom: -7px;
+}
+
+#banner {
+    margin: -23px 0 20px -22px;
+    margin-bottom: -80px;
+
+}
+#lista_perso {
+    list-style: none;
+    width:700px;
+    padding:5px;
+    border:3px inset #cccccc;
+    border-radius: 5px;
+
+}
+#lista_perso li {
+    margin: 0px 50px 5px 5px;
+    padding: 3px;
+    border: 1px outset #310d0b;
+    border-radius: 5px;
+    background-color: #666666;
+    margin-bottom:2px;
+    color: white;
+    }
+
+#lista_perso li a:link, a:visited {
+	text-decoration: none;
+	}
+#lista_perso li a:hover {
+	text-decoration: none;
+	color: #f00
+	}
+#lista_perso li a:active {
+	text-decoration: none
+	}
+
+#acesso {
+  margin: -7px -140px /*0px 0px;*/
+
+}
+
+#foto {
+  margin: 5px 5px 5px 5px;
+  float: left;
+}
+.corpo {
+  margin: 5px 5px 0 5px;
+  background-color: #eee;
+
+}
+
+.artigo {
+  margin: 5px 5px 0 5px;
+}
+
+.rodape {
+  clear: both;
+  overflow: hidden;
+  background-color: #851e1b;
+  margin: 5px;
+  font-size: 0.8em;
+  color: white;
+  /*padding: 10px;*/
+  text-align: center;
+}
+.Centro {
+  overflow: hidden;
+  padding: 10px;
+  font-size: 0.8em;
+  margin: 5px;
+}
+
+.Centro_newuser {
+  font-weight: bold;
+  clear: both;
+
+
+}
+.rodape a {
+  color: white;
+}
+/* Menu principal */
+
+#menu {
+  clear: both;
+  overflow: hidden;
+  background-color: #310d0b;
+
+  height: 26px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+}
+
+#menu ul li a:link, #menu ul li a:visited, #menu ul li a:active {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#menu ul li a:hover {
+  background-color: #79b;
+  color: white;
+}
+
+#magias_do_dia {
+    list-style: none;
+    width:350px;
+    padding:5px;
+    border:3px inset #cccccc;
+    margin: 0px 0px 0px -5px;
+    border-radius: 5px;
+
+}
+#magias_do_dia li {
+    margin: 0px 50px 5px 5px;
+    padding: 3px;
+    border: 1px outset #310d0b;
+    border-radius: 5px;
+    background-color: #666666;
+    margin-bottom:2px;
+    color: white;
+    }
+
+#magias_conhecidas {
+    list-style: none;
+    width:700px;
+    padding:5px;
+    margin: 5px;
+    border:3px inset #ffffff;
+    border-radius: 5px;
+
+
+}
+#magias_conhecidas dl {
+    border: 1px solid #310d0b;
+    border-radius: 1px;
+    background-color: white;
+    color: white;
+
+    }
+
+#magias_conhecidas dd {
+    width:600px;
+
+    padding: 5px;
+    border: 1px outset #310d0b;
+    border-radius: 5px;
+    background-color: #310d0b;
+    margin:3px;
+    }
+#magias_conhecidas dt {
+    /*width:400px;*/
+    padding: 3px;
+    border: 1px outset #310d0b;
+    border-radius: 5px;
+    background-color: #666666;
+    margin:1px;
+
+    color: white;
+
+    }
+#magias_conhecidas dt a:link, a:visited {
+	text-decoration: none;
+	color: white
+	}
+#magias_conhecidas dt a:hover {
+	text-decoration: none;
+	color: white
+	}
+#magias_conhecidas dt a:active {
+	text-decoration: none
+	color: white
+	}
+
+
+#Criarmagia {
+    align: left;
+}

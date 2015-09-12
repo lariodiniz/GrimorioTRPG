@@ -1,0 +1,1 @@
+﻿web: gunicorn grimorio.wsgi --log-file -

@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+{% block titulo %}Grimório - TormentaRPG: Cadastro de Usuario{% endblock %}
+{% block subtitulo %}Escolher Magias de Nivel {{ nivel_magia }}{% endblock %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="col-md-6">
+        <fieldset class="form-group">
+            <label for="exampleSelect1">Personagens</label>
+            <select name="Personagen" class="form-control" id="exampleSelect1">
+            {% for personagem in personagens %}
+                <option>{{ personagem.pk }} - {{ personagem }}</option>
+                {% endfor %}
+            </select>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <fieldset class="form-group">
+            <label for="exampleSelect2">Magias</label>
+            <select name="Magia" multiple class="form-control" id="exampleSelect2">
+                {% for spell in object_list %}
+                <option>{{ spell.name }} - {{ spell.book }} Pagina: {{ spell.page }}</option>
+                {% endfor %}
+
+            </select>
+        </fieldset>
+    </div>
+    <input type="submit" value="Escolher" name="Teste" class="btn btn-primary">
+</form>
+
+
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% block titulo %}Grimório - TormentaRPG: Sobre{% endblock %}
+{% block subtitulo %}Personagens{% endblock %}
+{% block content %}
+
+
+        <div class="list-group">
+        <ul>
+            <a href="{% url 'newcharacter' %}"><div id="link" style="color: #000000;border: 3px outset #00000f ;width:100px; border-radius: 5px;" >Novo</div></a>
+            <p class="list-group-item-text"><b>NOME  DO PERSONAGEM</b><br/>DESCRIÇÂO</p>
+            {% for character in object_list %}
+
+                    <a href="{{ character.get_absolute_url }}" class="list-group-item"><h4 class="list-group-item-heading">{{ character.pk }} - {{ character.name }}</h4>
+                        <p class="list-group-item-text">{{ character.descricao }}</p></a>
+                    {% empty %}
+                    <a>Nenhum Personagem na lista</a>
+
+
+            {% endfor %}
+        </ul>
+
+        </div>
+
+{% endblock content %}

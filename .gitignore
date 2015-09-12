@@ -6,6 +6,19 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+bin
+build
+include
+lib
+local
+man
+share
+Scripts
+migrations
+*.pyc
+*~
+*.db
+.DS_Store
 .Python
 env/
 build/
@@ -55,3 +68,18 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+
+0001_initial.py
+0002_auto_20150806_0234.py
+0003_auto_20150807_1146.py
+0004_auto_20150807_1200.py
+0005_auto_20150807_2013.py
+0006_auto_20150807_2021.py
+0007_auto_20150807_2041.py
+0008_auto_20150808_1117.py
+0009_auto_20150808_1522.py
+0010_auto_20150812_1639.py
+0011_auto_20150814_0343.py
+0012_auto_20150814_0403.py

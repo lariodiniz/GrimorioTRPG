@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block titulo %}Grimório - TormentaRPG: Cadastro de Usuario{% endblock %}
+{% block content %}
+<div class="Centro"">
+ <h3>Criar Usuario</h3>
+	<div class="Centro_newuser">
+
+        <form action="." method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Cadastrar" class="button">
+        </form>
+	</div>
+</div>
+{% endblock content %}

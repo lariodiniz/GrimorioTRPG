@@ -1,0 +1,52 @@
+/*
+ * style.css 
+ */
+.container, .container-fluid {
+
+ background-color: white;}
+
+body {
+  background-color: #851e1b;
+  text-align: center;
+
+}
+
+.navbar-default {
+
+    background-color: #310d0b;
+    border-color: #E7E7E7;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-default ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-default ul li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+}
+
+.navbar-default ul li a:link, .navbar-default ul li a:visited, .navbar-default ul li a:active {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-default ul li a:hover {
+  background-color: #79b;
+  color: white;
+}
+
+.rodape {
+
+  background-color: #310d0b;
+  color: white;
+  margin: 5px;
+
+
+}

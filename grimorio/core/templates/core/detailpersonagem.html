@@ -1,0 +1,41 @@
+
+{% extends 'core/base.html' %}
+{% block titulo %}Grimório - TormentaRPG: Sobre{% endblock %}
+<h2>{% block subtitulo %}{{ object.name }}{% endblock %}
+{% block content %}
+
+    <ul class="nav nav-list" style="border: 3px inset #00000f; margin: 5px; padding: 5px; background-color: #CDCDCD;">
+        <li class="nav-header" ><a href="{% url 'newmagic' %}" style="background-color: #FFFFFF; color: #000000;border: 3px outset #00000f ;width:150px; border-radius: 5px;">Nova Magia</a></li>
+        <li class="nav-header" style="border: 3px outset #00000f; background-color: #310d0b; color: white;"><b>Magias Conhecidas</b></li>
+        {% for cont in contador %}
+            <li class="nav-header active" style="border: 3px outset #00000f; padding:5px; margin: 5px; background-color: #FFFFFF;"><b>Nivel {{ cont }} <a href="{% url 'magicdetail' cont %}" class="btn btn-primary" role="button" style="padding: 0px">Aprender Magia Deste Nivel</a></li>
+            {% for spells in object.spells.all %}
+                {% if spells.nivel ==  cont  %}
+                  <div  onmouseover="getElementById('{{ spells.pk }}').style.display='block'" onmouseout="getElementById('{{ spells.pk }}').style.display='none'"><li style="border: 1px outset #00000f; margin: 1px; background-color: #E6E8FA; "><p>{{ spells.name }} - {{ spells.book }} Pagina: {{ spells.page }}</p></li></div>
+                                <div id="{{ spells.pk }}" style="text-align: left; position:absolute; padding:10px; border:3px outset #cccccc; border-radius: 5px; width:320px; font-size: 0.9em; background:#eeeeff; color: #000000; margin: -150px 0px 0px 0px;; display:none; " >
+                                    <h2> {{ spells.name }}</h2>
+                                    <p>
+                                        <b>Nivel: </b>{{ spells.nivel }}
+                                        <b>Tipo: </b>{{ spells.tipe }}
+                                        <b>Descritor: </b>{{ spells.descriptors }}<br/>
+                                        <b>Alcance: </b>{{ spells.reach }}
+                                         <b>Tempo de Execução: </b>{{ spells.execution }}<br/>
+                                        <b>Alvo: </b>{{ spells.target }}<br/>
+                                        <b>Resistência: </b>{{ spells.resistence }}
+                                        <b>Duração: </b>{{ spells.duration }}<br/></p>
+                                       <div style="margin-bottom:10px; padding:3px; border:1px solid #000000; border-radius: 5px;">
+                                        <p><b>Descrição: </b><br/><br/><i>{{ spells.description }}</i></p>
+                                       </div>
+                                       <b>Livro: </b>{{ spells.book }}
+                                        <b>Pagina: </b>{{ spells.page }}</p></div>
+
+                {% endif %}
+
+
+
+            {% endfor %}
+
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
